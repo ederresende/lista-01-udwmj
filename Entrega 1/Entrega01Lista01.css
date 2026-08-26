@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 30px;
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #ffffff;
+    color: #333333;
+    line-height: 1.6;
+    padding: 40px 20px;
+}
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Estilização dos Cartões/Seções */
+.card {
+    background-color: transparent;
+    padding: 10px 0;
+    margin-bottom: 24px;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+/* Títulos */
+h1 {
+    font-size: 2rem;
+    color: #0066cc;
+    margin-bottom: 8px;
+}
+
+h2, h3, h4 {
+    color: #2c3e50;
+    margin-bottom: 12px;
+    padding-bottom: 6px;
+    border-bottom: 2px solid #0066cc;
+}
+
+.subtitulo {
+    font-size: 1.1rem;
+    color: #666666;
+    margin-bottom: 16px;
+}
+
+/* Listas */
+ul {
+    list-style-type: none;
+}
+
+li {
+    margin-bottom: 10px;
+    padding-left: 12px;
+    border-left: 3px solid #0066cc;
+}
+
+strong {
+    color: #0066cc;
+}
+
+/* Botão */
+.btn {
+    display: inline-block;
+    text-decoration: none; /* remove o sublinhado */
+    background-color: #0066cc;
+    color: #ffffff;
+    padding: 10px 16px;
+    border-radius: 6px;
+    font-size: 0.95rem;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+}
+
+.btn:hover {
+    background-color: #004c99;
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    font-size: 0.85rem;
+    color: #777777;
+    padding: 15px 0;
+}
+
+/* Tema Escuro (Modo Noturno) */
+body.dark-mode {
+    background-color: #121212;
+    color: #e0e0e0;
+}
+
+body.dark-mode .card {
+    background-color: transparent;
+    box-shadow: none;
+}
+body.dark-mode h1,
+body.dark-mode strong {
+    color: #4da3ff;
+}
+
+body.dark-mode h2,
+body.dark-mode h3,
+body.dark-mode h4 {
+    color: #ffffff;
+    border-bottom-color: #4da3ff;
+}
+
+body.dark-mode li {
+    border-left-color: #4da3ff;
+}
+
+body.dark-mode .subtitulo,
+body.dark-mode footer {
+    color: #aaaaaa;
+}
+
+body.dark-mode .btn {
+    background-color: #4da3ff;
+    color: #121212;
+}
+
+body.dark-mode .btn:hover {
+    background-color: #80bdff;
+}
